@@ -48,11 +48,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-
-  // Ajout de la configuration des images
-  images: {
-    domains: ['avatar.vercel.sh'],
-  },
 };
 
 export default nextConfig;

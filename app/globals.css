@@ -3,22 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @keyframes float {
@@ -48,19 +33,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delayed {
-  animation: float-delayed 6s ease-in-out infinite;
-  animation-delay: 3s;
-}
-
-.animate-value {
-  animation: value-count 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 @layer base {
@@ -136,12 +108,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-}
-
-select option {
-  @apply py-2 px-4 hover:bg-[#4CAF50]/10 cursor-pointer;
-}
-
-select option:checked {
-  @apply bg-[#4CAF50]/10 text-[#4CAF50];
 }
